@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/areejdev1/areej-portfolio/main/vibeslogo.png" width="110" alt="Board Vibes Logo"/>
+<img src="https://raw.githubusercontent.com/areejfatima33/areej-portfolio/main/vibeslogo.png" width="110" alt="Board Vibes Logo"/>
 
 # Board Vibes
 ### AI-Assisted Educational Platform for Pakistani Students
@@ -307,7 +307,7 @@ flutter run
 
 **Areej Fatima** — Flutter & Android Developer at Figover EU OÜ
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-Visit-gold?style=flat-square)](https://areejdev1.github.io/areej-portfolio/)
+[![Portfolio](https://img.shields.io/badge/Portfolio-Visit-gold?style=flat-square)](https://areejfatima33.github.io/areej-portfolio/)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/areej-dev01/)
 [![Play Store](https://img.shields.io/badge/Play_Store-See_Apps-brightgreen?style=flat-square&logo=google-play)](https://play.google.com/store/apps/developer?id=Areexa+Studios)
 
