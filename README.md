@@ -11,7 +11,7 @@
 ![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)
 ![AdMob](https://img.shields.io/badge/AdMob-Monetized-EA4335?style=for-the-badge&logo=google-admob)
 
-*Built and shipped solo — from idea to Play Store.*
+*Built and shipped solo from idea to Play Store.*
 
 </div>
 
@@ -21,8 +21,8 @@
 
 Pakistani students preparing for board exams face two consistent friction points:
 
-- **Scattered resources** — past papers, MCQs, and books live across different apps, WhatsApp groups, and websites
-- **Unreliable internet** — apps that require connectivity fail exactly when students need them most, especially in rural areas
+- **Scattered resources** past papers, MCQs, and books live across different apps, WhatsApp groups, and websites
+- **Unreliable internet** apps that require connectivity fail exactly when students need them most, especially in rural areas
 
 **Board Vibes** solves both. One app. Offline-first. AI-assisted. Works anywhere.
 
@@ -54,15 +54,15 @@ Pakistani students preparing for board exams face two consistent friction points
 
 | Feature | Description |
 |---|---|
-| 📚 **PDF Books** | Board-specific past papers and books — available offline after first download |
+| 📚 **PDF Books** | Board-specific past papers and books available offline after first download |
 | ⚡ **Quiz Mode** | Subject/chapter-wise MCQs with timer, hints, and instant feedback |
 | 📊 **Progress Tracking** | Per-subject performance charts, weak area detection, and achievement badges |
 | 👥 **Multi-Profile** | Multiple student profiles on a single device with isolated progress |
 | 🤖 **Gemini AI Chatbot** | Ask any question, get instant AI-powered explanations without leaving the app |
 | 🔔 **Smart Notifications** | Daily study reminders with rotating messages via local notifications |
-| 📥 **Content Download** | Students download their board/class content once — then it's theirs offline |
+| 📥 **Content Download** | Students download their board/class content once then it's theirs offline |
 | 🏆 **Achievements** | Gamified badges to keep students motivated across their study sessions |
-| 💰 **AdMob Monetization** | Banner, Interstitial & Rewarded ads — policy-compliant, live revenue |
+| 💰 **AdMob Monetization** | Banner, Interstitial & Rewarded ads policy-compliant, live revenue |
 
 ---
 
@@ -245,22 +245,22 @@ lib/
 ## ⚙️ Key Engineering Decisions
 
 ### 1. Offline-First with 5 SQLite Tables
-Five dedicated database tables (progress, quiz_history, achievements, bookmarks, downloads) mean the app works fully offline after initial content download. No loading spinners for core features — data is always local-first, Firebase syncs in the background.
+Five dedicated database tables (progress, quiz_history, achievements, bookmarks, downloads) mean the app works fully offline after initial content download. No loading spinners for core features data is always local-first, Firebase syncs in the background.
 
 ### 2. Feature-First Folder Structure
-Each feature (ai_assistant, mcqs, progress, profile, setup...) is fully self-contained with its own screens, widgets, and logic. Adding a new feature doesn't touch unrelated code — the architecture scales cleanly.
+Each feature (ai_assistant, mcqs, progress, profile, setup...) is fully self-contained with its own screens, widgets, and logic. Adding a new feature doesn't touch unrelated code the architecture scales cleanly.
 
 ### 3. 11 Dedicated Service Classes
 `ad_service`, `notification_service`, `download_service`, `statistics_service` and more keep business logic completely out of UI code. Providers consume services; screens consume providers. Clean separation at every layer.
 
 ### 4. Board/Class/Medium Setup Flow
-Students select their board (BISE Multan, Sahiwal etc.), class (9th/10th), and medium (English/Urdu) once on first launch. All content — MCQs, books, AI knowledge base — is scoped to their selection. The right data for the right student.
+Students select their board (BISE Multan, Sahiwal etc.), class (9th/10th), and medium (English/Urdu) once on first launch. All content MCQs, books, AI knowledge base is scoped to their selection. The right data for the right student.
 
 ### 5. AdMob Lifecycle Management
 `ad_service.dart` handles full ad lifecycle including preloading, disposal on navigate, and `AppLifecycleState` changes to prevent crashes when the app backgrounds mid-ad. Policy-compliant with production `ads.txt`.
 
 ### 6. Pagination for Large MCQ Datasets
-Quiz datasets contain hundreds of questions per subject. Pagination on list screens prevents loading entire datasets into memory — keeps scrolling smooth on low-end devices common in the target market.
+Quiz datasets contain hundreds of questions per subject. Pagination on list screens prevents loading entire datasets into memory keeps scrolling smooth on low-end devices common in the target market.
 
 ---
 
@@ -270,7 +270,7 @@ Quiz datasets contain hundreds of questions per subject. Pagination on list scre
 |---|---|
 | UI Framework | Flutter 3.x / Dart |
 | State Management | Provider (8 providers) |
-| Local Database | SQLite — sqflite (5 tables) |
+| Local Database | SQLite sqflite (5 tables) |
 | Remote Backend | Firebase Firestore, Auth, FCM |
 | AI Integration | Gemini AI API |
 | Notifications | flutter_local_notifications |
@@ -295,17 +295,17 @@ flutter run
 
 ## 📈 Production
 
-- ✅ Live on Google Play Store — built and shipped solo
+- ✅ Live on Google Play Store built and shipped solo
 - 💰 Live AdMob revenue (Banner, Interstitial, Rewarded)
 - 📱 Optimized for low-end Android devices
 - 🌐 Designed for low-connectivity environments (offline-first)
-- 🇵🇰 Serving Pakistani Matric students — 9th & 10th class, English & Urdu medium
+- 🇵🇰 Serving Pakistani Matric students 9th & 10th class, English & Urdu medium
 
 ---
 
 ## 👩‍💻 Developer
 
-**Areej Fatima** — Flutter & Android Developer at Figover EU OÜ
+**Areej Fatima** Flutter & Android Developer at Figover EU OÜ
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-Visit-gold?style=flat-square)](https://areejfatima33.github.io/areej-portfolio/)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/areej-dev01/)
