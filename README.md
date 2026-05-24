@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/areejfatima33/areej-portfolio/main/vibeslogo.png" width="110" alt="Board Vibes Logo"/>
+<img src="./vibeslogo.png" width="110" alt="Board Vibes Logo"/>
 
 # Board Vibes
 ### AI-Assisted Educational Platform for Pakistani Students
